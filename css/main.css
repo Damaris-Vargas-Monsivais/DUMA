@@ -10,7 +10,7 @@
   --text-color: black;
   --navbar-shallow-color: rgba(0,0,0,0.14);
   --menu-mobile-background-color: #d62620;
-  --emergente-color:#000000;
+  --emergente-color:#f1f1f1;
 }
 section[id]{
   scroll-margin-top:70px;

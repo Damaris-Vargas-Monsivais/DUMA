@@ -1,38 +1,20 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
-    background: #181818;
-    color: #fff;
-    line-height: 1.6;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0 1.5em;
-}
 
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-}
 
-ul {
+.contact-info ul {
     list-style: none;
     padding: 0;
 }
 
-.logo {
+.logo-modal {
     text-align: center;
     font-size: 3em;
 }
 
-.logo span {
-    color: #B70E21;
-}
+
 
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, .3);
 }
 
 .contact-wrapper > * {
@@ -100,9 +82,7 @@ ul {
 
 /* LARGE SIZE */
 @media(min-width: 700px) {
-    body {
-        padding: 0 4em;
-    }
+    
     .contact-wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;

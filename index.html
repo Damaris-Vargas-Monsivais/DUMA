@@ -24,9 +24,10 @@
   <link rel="stylesheet" href="css/whats2.css">
   <link rel="stylesheet" href="css/gmail.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+  <script language="JavaScript" type="text/javascript" src="ajax.js"></script>
 
   <script defer src="js/app.js"></script>
+  <script defer src="js/ajax.js"></script>
 </head>
 
 <body>
@@ -62,46 +63,7 @@
       </div>
     </div>
   </section>
-
-  <!-----------------------
-  <div class="horizontal-padding vertical-padding">
-    <section class="perfil" id="perfil">
-      <div class="slide">
-        <div class="slide-inner">
-          <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden checked="checked">
-          <div class="slide-item">
-            <img src="slider/carrucel1.png">
-          </div>
-          <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden>
-          <div class="slide-item">
-            <img src="slider/carr1.gif">
-          </div>
-          <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden>
-          <div class="slide-item">
-            <img src="slider/carrucel1.png">
-          </div>
-          <label for="slide-3" class="slide-control prev control-1">‹</label>
-          <label for="slide-2" class="slide-control next control-1">›</label>
-          <label for="slide-1" class="slide-control prev control-2">‹</label>
-          <label for="slide-3" class="slide-control next control-2">›</label>
-          <label for="slide-2" class="slide-control prev control-3">‹</label>
-          <label for="slide-1" class="slide-control next control-3">›</label>
-          <ol class="slide-indicador">
-            <li>
-              <label for="slide-1" class="slide-circulo">•</label>
-            </li>
-            <li>
-              <label for="slide-2" class="slide-circulo">•</label>
-            </li>
-            <li>
-              <label for="slide-3" class="slide-circulo">•</label>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-  </div>---->
-
+  
   <!--------INDEX DE DUMA-------->
   <section class="about section tk-container" id="about">
     <div class="about_container tk-grid">
@@ -337,17 +299,71 @@
 
   <!------VENTANA EMERGENTE DE CORREO------->
   <div class="horizontal-padding vertical-padding">
-    
-    
+  
+  
+  
+  
+  
+  
+  
+    <div class="contacto" id="contac">
+    <div class="contact-wrapper animated bounceInUp">
+ 
+        <div class="cerrar-modal">
+          <a href="javascript:cerrar()">
+            <img width="20px" height="26px" src="img/cerrar.svg">
+          </a>
+        </div>
+        <div class="contact-form">
+          <h1>Contactanos</h1>
+          <form onsubmit="enviarMail(); return false" name="enviar_email" action=""></form>
+          <form method="post" action="correo.php">
+            <p>
+              <label for="name">Empresa</label>
+              <input required type="text" name="name" id="name" />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input required type="email" name="email" id="email" />
+            </p>
+            <p>
+              <label for="subject">Asunto</label>
+              <input required type="text" name="subject" id="subject" />
+            </p>
+  
+            <p class="block">
+              <label for="message">Mensaje</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+            <p class="block">
+              <button>
+                Enviar
+              </button>
+            </p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h4>Más información</h4>
+          <ul>
+            <li><i class="fa fa-phone"></i> 800 836 9991</li>
+            <li><i class="fa fa-phone"></i> 871 731 1158</li>
+            <li><i class="fa fa-envelope"></i> cotizaciones@gduma.com</li>
+          </ul>
+          <p>gduma.com</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <form onsubmit="enviar_ajax(); return false" id="form1">
+    <input type="text" name="nombre"><br>
+    <textarea name="mensaje"></textarea><br>
+    <input type="submit" value="Enviar">
+    </form>
 
-    
-    
 
 
-
-
-
-    
+    <!----
     <div class="contacto" id="contac">
       <div class="cerrar-modal">
         <a href="javascript:cerrar()">
@@ -357,17 +373,17 @@
       <h2 class="contacto-title">Contacto</h2>
       <div class="contacto-details">
         
-       <!---- <div class="contacto-details-group">
+       <div class="contacto-details-group">
           <p class="contacto-label">Email:</p>
           <p class="contacto-text">cotizaciones@gduma.com</p>
-        </div>--->
+        </div>
         <div class="contacto-details-group">
           <p class="contacto-text-duma">
             ¡Deje su mensaje y con gusto le atenderemos!
           </p>
         </div>
       </div>
-      <form method="POST" action="correo.php" class="contacto-form">
+      <form method="POST" action="correo.php" class="contacto-form" name="contact" netlify>
         <div class="contacto-form-group">
           <label for="name">Nombre de la empresa</label>
           <input required type="text" name="name" id="name" />
@@ -386,13 +402,13 @@
         </div>
 
         <button type="submit" class="contacto-form-submit">Enviar</button>
-        <!--<input type="hidden" name="_next" value="http://localhost:5500/">
+        <input type="hidden" name="_next" value="http://localhost:5500/">
         <input type="hidden" name="_captcha" value="false">
-        <input type="email" name="email" placeholder="Email Address">-->
+        <input type="email" name="email" placeholder="Email Address">
       </form>
 
       
-      <!--<nav class="social"  >
+      <nav class="social"  >
         <ul class="social-list">
           <li>
             <a href="https://www.facebook.com/gpoduma" class="social-link"><img width="30px" height="30px" src="img/social/facebook.svg"
@@ -403,8 +419,8 @@
               class="social-link"><img width="30px" height="30px" src="img/social/whatsapp.svg" alt="whatsapp profile" /></a>
           </li>
         </ul>
-      </nav>--->
-    </div>
+      </nav>
+    </div>--->
   </div>
 
   <!---ICONO FLOTANTE DE WHATSAPP-->
