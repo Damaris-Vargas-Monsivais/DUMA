@@ -1,0 +1,87 @@
+/*PORTADA DE DUMA*/
+.perfil {
+     background-image: url(../img/portada.jpg);
+     background-position: center center;
+     background-size: cover;
+}
+.perfil_container {
+    height: calc(100vh - 3rem);
+    align-content: center;
+}
+.perfil_data {
+    margin-top: -245px;
+    text-align: center;
+    font-size: .5rem;
+}
+.perfil_title {
+    font-size: 1.5rem;
+    color: #720000;
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+/*INFORMACION E IMAGEN DE PORTADA DUMA*/
+.section-subtitle {
+    font-size: 1.5rem;
+    display: block;
+    color: #FFA500;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.about_data {
+    text-align: center;
+}
+.about_description {
+    margin-bottom: 1.5rem;
+}
+.about_img {
+    width: 330px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+@media screen and (min-width:576px) {
+    .about_container {
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .about_data, .about_initial,
+    .container_container{
+        text-align: initial;
+    }
+    .about_img {
+        width: 380px;
+        order: -1;
+    }
+    .contact_container{
+        grid-template-columns: 1.75fr 1fr;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    body {
+        margin: 0;
+    }
+    .section {
+        padding-top: 8rem;
+    }
+    
+    .perfil_container {
+        height: 100vh;
+        justify-items: center;
+    }
+    
+   
+}
+
+
+@media screen and (min-width:721px) {
+    .perfil_container {
+        height: 640px;
+    }
+}

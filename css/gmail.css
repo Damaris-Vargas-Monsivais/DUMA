@@ -1,0 +1,83 @@
+/*BOTON DE CONTACTANOS GMAIL*/
+.boton-modal-G{
+    display: inline-block;
+    background-color: #920808;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+.boton-modal-G a{
+    color: #fff;
+}
+.boton-modal-G:hover {
+    background-color: #920808;
+}
+
+/*VENTANA EMERGENTE*/
+.contacto{
+    width: 50%;
+    font-size: 10px;
+    padding: 15px;
+    min-height: 100px;
+    position: fixed;
+    left: 25%;
+    top: 14%;
+    display: none;
+}
+.cerrar-modal{
+
+    position: absolute;
+    right: -1px;
+    top: 1px;
+}
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 
+  minmax(150px, 1fr));
+  gap:32px
+}
+/*BOTON FLOTANTE DE GMAIL*/
+.contenedor-gmail{
+    display: block;
+    text-decoration: none;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 15px;
+    right: 88px;
+	background-color:#b61414;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.contenedor-gmail:hover {
+	text-decoration: none;
+	color: #fff;
+    background-color:#b61414;
+}
+
+.my-contenedor-gmail{
+	margin-top:16px;
+}
+.nav-bottom-G {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 8;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    margin: 0px;
+  }
+  @media (max-width: 360px) {
+    .nav-bottom-G {
+      width: 320px;
+    }
+  }

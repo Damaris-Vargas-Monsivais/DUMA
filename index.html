@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DUMA</title>
+  <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/perfil.css" />
+  <link rel="stylesheet" href="css/mapas.css" />
+  <link rel="stylesheet" href="css/unidades.css">
+  <link rel="stylesheet" href="css/informacion.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/whats.css">
+  <link rel="stylesheet" href="css/whats2.css">
+  <link rel="stylesheet" href="css/gmail.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <script defer src="js/app.js"></script>
+</head>
+
+<body>
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="#" class="logo">
+        <img height="40" width="100" src="img/logo.png" alt="duma" />
+      </a>
+      <button class="open-menu" aria-label="Abrir menú">
+        <img src="img/hamburger-icon.svg" alt="abrir menú" />
+      </button>
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <img src="img/close-icon.svg" alt="cerrar menú" />
+        </button>
+        <li><a href="#perfil" class="selected">Inicio</a></li>
+        <li><a href="#unidad">Infraestructura</a></li>
+        <li><a href="#mapas">Nuestros Destinos</a></li>
+        <li><a href="#informacion">Contacto</a></li>
+        <!---<li><a href="#contacto">Contacto</a></li>--->
+      </ul>
+    </nav>
+  </header>
+
+  <!--------PORTADA DE DUMA-------->
+  <section class="perfil" id="perfil">
+    <div class="perfil_container tk-container tk-grid">
+      <div class="perfil_data">
+        <a class="logo-portada">
+          <img height="110" width="300" src="img/LOGO2.png" alt="Duma" />
+        </a>
+        <h1 class="perfil_title">Servicios de Logística y Transporte</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-----------------------
+  <div class="horizontal-padding vertical-padding">
+    <section class="perfil" id="perfil">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden checked="checked">
+          <div class="slide-item">
+            <img src="slider/carrucel1.png">
+          </div>
+          <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden>
+          <div class="slide-item">
+            <img src="slider/carr1.gif">
+          </div>
+          <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden>
+          <div class="slide-item">
+            <img src="slider/carrucel1.png">
+          </div>
+          <label for="slide-3" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-1" class="slide-control next control-3">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>---->
+
+  <!--------INDEX DE DUMA-------->
+  <section class="about section tk-container" id="about">
+    <div class="about_container tk-grid">
+      <div class="about_data">
+        <span class="section-subtitle about_initial">Tu carga, nuestra responsabilidad, tu tranquilidad.</span>
+        <h2 class="section-title about_initial">Somos Duma,<br> Una empresa de transporte</h2>
+        <p class="about_description">¡Confía en nosostros para hacer crecer tu negocio!</p>
+        <section class="boton-modal-G">
+          <a href="javascript:abrir()">Correo</a>
+        </section>
+        <section class="boton-modal-W">
+          <a href="https://wa.me/+528713156844?text= Buen dia, quisiera realizar una cotización" target="_blank"
+            class="social-link">Whatsapp</a>
+        </section>
+      </div>
+      <div class="about_data">
+        <img src="img/full-plataforma3.jpeg" alt="" class="about_img">
+      </div>
+    </div>
+  </section>
+
+  <!--------DESTINOS DE DUMA-------->
+  <section class="unidades" id="unidad">
+    <img src="img/wave.svg" alt="división" class="wave">
+    <div class="unidades-body">
+      <h2 class="unidades-title">Infraestructura</h2>
+      <h3 class="title-cards">Duma le ofrece los siguientes servicios:</h3>
+      <div class="container-card">
+
+        <div class="card1">
+          <div id="carrusel-contenido">
+            <div id="carrusel-caja">
+              <div class="carrusel-elemento">
+                <img class="imagenes" src="img/caja-seca1.jpg">
+              </div>
+              <div class="carrusel-elemento">
+                <img class="imagenes" src="img/caja-seca2.jpeg">
+              </div>
+            </div>
+          </div>
+          <div class="contenido-card">
+            <h3>Caja seca 53”</h3>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div id="carrusel-contenido">
+            <div id="carrusel-caja">
+              <div class="carrusel-elemento">
+                <img class="imagenes" src="img/plataforma1.jpeg">
+              </div>
+              <div class="carrusel-elemento">
+                <img class="imagenes" src="img/plataforma2.jpeg">
+              </div>
+            </div>
+          </div>
+          <div class="contenido-card">
+            <h3>Plataforma 48”</h3>
+          </div>
+        </div>
+
+        <div class="card3">
+          <div id="carrusel-contenido">
+            <div id="carrusel-caja">
+              <div class="carrusel-elemento">
+                <img class="imagenes" src="img/full-plataforma1.jpeg">
+              </div>
+              <div class="carrusel-elemento">
+                <img class="imagenes" src="img/full-plataforma2.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="contenido-card">
+            <h3>Full Plataforma</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="img/wave.svg" alt="división" class="wave wave_bottom">
+  </section>
+
+  <!--------LISTADO DE LOS SITIOS A DONDE VAN-------->
+  <div class="horizontal-padding vertical-padding">
+    <section class="mapas" id="mapas">
+      <h2 class="mapas-title">Nuestros Destinos</h2>
+      <div class="imagen-duma">
+        <img class="imagenes" src="mapa/destinos-duma.gif">
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <ul class="mapas-list">
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Cobertura: Estados Unidos,
+                Canadá y Centroamérica </div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Toda la República Mexicana
+              </div>
+            </li>
+            <!---<li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Tijuana, Baja California</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Ensenada, Baja California</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Mexicali, Baja California</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">La paz, Baja California Sur
+              </div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Cd. Juarez, Chihuahua</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Chihuahua, Chihuahua</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Hermosillo, Sonora</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Cd. Obregon, Sonora</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Mochis, Sinaloa</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Culiacán, Sinaloa</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Cd. de México, México</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Querétaro</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Guadalajara, Jalisco</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Puebla</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Tlaxcala</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Veracruz</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Villahermosa, Tabasco</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Mérida, Yucatán</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Cancún, Quintana Roo</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Cd. Hidalgo, Michoacán</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Nuevo Laredo, Tamaulipas</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Reynosa, Tamaulipas</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Monterrey, Nuevo León</div>
+            </li>
+            <li>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Matamoros, Coahuila</div>
+            </li>----->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--------INFORMACION DE ATENCION DE DUMA-------->
+  <section class="informaciones " id="informacion">
+    <img src="img/wave.svg" alt="división" class="wave">
+    <div class="informaciones-body">
+      <h2 class="informaciones-title">Contacto</h2>
+      <div class="contact_container tk-grid">
+        <h2 class="title-cards">¡Contactanos!</h2>
+        <p class="contact_description">Realiza tus cotizaciones o pide mas
+          información en cualquiera de nuestros medios de atención
+        </p>
+      </div>
+      <footer class="footer section tk-container">
+        <div class="footer_container tk-grid">
+          <div class="footer_content">
+            <a class="footer_logo">Redes sociales</a>
+            <div>
+              <a href="https://www.facebook.com/gpoduma" class="footer_social">
+                <i class="bx bxl-facebook"></i></a>
+              <a href="https://wa.me/+528713156844?text= Buen dia, quisiera realizar una cotización" target="_blank"
+                class="footer_social">
+                <i class="bx bxl-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer_content">
+            <h3 class="footer_title">Horario de atención</h3>
+            <ul>
+              <li><a class="footer_link">Lunes a Viernes: 9:00–14:00, 16:00–19:00</a></li>
+              <li><a class="footer_link">Sábado: 9:00–14:00</a></li>
+              <li><a class="footer_link">Domingo: Cerrado</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_content">
+            <h3 class="footer_title">Direcciones</h3>
+            <ul>
+              <h1 class="footer_subtitle">Oficinas</h1>
+              <li class="direccion">Carr. Tórreon-Matamoros #5750 Ote. Local 7 y 8, Col. Gustavo Díaz
+                Ordaz Torreón, Coahuila.</li+>
+                <h1 class="footer_subtitle">Patio</h1>
+              <li class="direccion">Periférico Esterito Mieleras, Coah. S/N CP. 27478</li+>
+                <h1 class="footer_subtitle">Plus</h1>
+              <li class="direccion">Patio de apoyo en Nuevo Laredo</li+>
+            </ul>
+          </div>
+        </div>
+        <p class="footer_copy">&#169; Grupo Duma Transportes</p>
+
+      </footer>
+    </div>
+    <img src="img/wave.svg" alt="división" class="wave wave_bottom">
+  </section>
+
+
+
+  <!------VENTANA EMERGENTE DE CORREO------->
+  <div class="horizontal-padding vertical-padding">
+    
+    
+
+    
+    
+
+
+
+
+
+    
+    <div class="contacto" id="contac">
+      <div class="cerrar-modal">
+        <a href="javascript:cerrar()">
+          <img width="30px" height="30px" src="img/cerrar.svg">
+        </a>
+      </div>
+      <h2 class="contacto-title">Contacto</h2>
+      <div class="contacto-details">
+        
+       <!---- <div class="contacto-details-group">
+          <p class="contacto-label">Email:</p>
+          <p class="contacto-text">cotizaciones@gduma.com</p>
+        </div>--->
+        <div class="contacto-details-group">
+          <p class="contacto-text-duma">
+            ¡Deje su mensaje y con gusto le atenderemos!
+          </p>
+        </div>
+      </div>
+      <form method="POST" action="correo.php" class="contacto-form">
+        <div class="contacto-form-group">
+          <label for="name">Nombre de la empresa</label>
+          <input required type="text" name="name" id="name" />
+        </div>
+        <div class="contacto-form-group">
+          <label for="email">Email</label>
+          <input required type="email" name="email" id="email" />
+        </div>
+        <div class="contacto-form-group">
+          <label for="subject">Asunto</label>
+          <input required type="text" name="subject" id="subject" />
+        </div>
+        <div class="contacto-form-group">
+          <label for="message">Mensaje</label>
+          <textarea required name="message" id="message" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="contacto-form-submit">Enviar</button>
+        <!--<input type="hidden" name="_next" value="http://localhost:5500/">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="email" name="email" placeholder="Email Address">-->
+      </form>
+
+      
+      <!--<nav class="social"  >
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/gpoduma" class="social-link"><img width="30px" height="30px" src="img/social/facebook.svg"
+                alt="facebook profile" /></a>
+          </li>
+          <li>
+            <a href="https://wa.me/+528713156844?text= Buen dia, quisiera realizar una cotización" target="_blank"
+              class="social-link"><img width="30px" height="30px" src="img/social/whatsapp.svg" alt="whatsapp profile" /></a>
+          </li>
+        </ul>
+      </nav>--->
+    </div>
+  </div>
+
+  <!---ICONO FLOTANTE DE WHATSAPP-->
+  <div class="nav-bottom">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="popup-whatsapp fadeIn">
+      <div class="content-whatsapp -top"><button type="button" class="closePopup">
+          <i class="material-icons icon-font-color">close</i>
+        </button>
+        <p> <img src="img/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+      </div>
+             <div class="content-whatsapp -bottom">
+        
+        <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+        <button class="send-msPopup" id="send-btn" type="button">
+          <i class="material-icons icon-font-color--black">send</i>
+        </button>
+      </div>
+    </div>
+    <button type="button" id="whats-openPopup" class="whatsapp-button">
+      <div class="float">
+        <i class="fa fa-whatsapp my-float"></i>
+      </div>
+    </button>
+    <div class="circle-anime"></div>
+  </div>
+  <script src="js/whats.js"></script>
+  <!---ICONO FLOTANTE DE GMAIL-->
+  <div class="nav-bottom-G">
+    <section class="contenedor-gmail">
+      <a href="javascript:abrir()"><i class="fa fa-envelope my-contenedor-gmail" style="color: #ffffff;"></i></a>
+    </section>
+    <script>
+      function abrir() {
+        document.getElementById("contac").style.display = "block";
+      }
+      function cerrar() {
+        document.getElementById("contac").style.display = "none";
+      }
+    </script>
+  </div>
+
+</body>
+
+</html>
