@@ -1,5 +1,3 @@
-
-
 .header {
   position:relative;
   text-align:center;
@@ -8,6 +6,20 @@
   color:white;
 }
 
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:1vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
 
 .flex { /*Flexbox for containers*/
   display: flex;
@@ -25,6 +37,12 @@
   max-height:150px;
 }
 
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
 
 /* Animation */
 
@@ -64,3 +82,6 @@
     height:30vh;
   }
 }
+
+
+
