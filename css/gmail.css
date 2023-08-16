@@ -27,8 +27,8 @@
 .cerrar-modal{
 
     position: absolute;
-    right: 4px;
-    top: 2px;
+    right: 6px;
+    top: 6px;
 }
 
 .contacto {
@@ -39,23 +39,21 @@
 }
 /*BOTON FLOTANTE DE GMAIL*/
 .contenedor-gmail{
-    display: block;
-    text-decoration: none;
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom: 15px;
-    right: 88px;
+  position:fixed;
+  width: 50px;
+  height: 50px;
+	bottom: 20px;
+  right: 88px;
 	background-color:#b61414;
-	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  font-size:20px;
+  /*text-decoration: none;
+	color:#FFF;
+  z-index:100;*/
 }
 .contenedor-gmail:hover {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: #fff;
     background-color:#b61414;
 }

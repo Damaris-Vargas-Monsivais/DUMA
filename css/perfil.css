@@ -19,10 +19,6 @@
     margin-bottom: .5rem;
 }
 
-
-
-
-
 /*INFORMACION E IMAGEN DE PORTADA DUMA*/
 .section-subtitle {
     font-size: 1.5rem;
@@ -79,9 +75,23 @@
    
 }
 
-
 @media screen and (min-width:721px) {
     .perfil_container {
         height: 640px;
     }
+}
+
+/*BOTON DE CONTACTANOS WHATSAPP*/
+.boton-modal-W{
+    display: inline-block;
+    background-color: #1c9b42;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+.boton-modal-W a{
+    color: #fff;
+}
+.boton-modal-W:hover {
+    background-color: #1c9b42;
 }

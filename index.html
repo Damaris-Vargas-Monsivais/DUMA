@@ -20,14 +20,26 @@
   <link rel="stylesheet" href="css/contacto.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/slider.css">
-  <link rel="stylesheet" href="css/whats.css">
-  <link rel="stylesheet" href="css/whats2.css">
   <link rel="stylesheet" href="css/gmail.css">
+  <link rel="stylesheet" href="css/animacion.css">
+  <link rel="stylesheet" href="css/correo.css">
+  <link rel="stylesheet" href="css/correo2.css">
+  <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script language="JavaScript" type="text/javascript" src="ajax.js"></script>
+ 
 
   <script defer src="js/app.js"></script>
-  <script defer src="js/ajax.js"></script>
+  <script defer src="js/correo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+  <!-- jQuery 1.8+ -->
+  <script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+  <!-- Plugin JS file -->
+  <script src="plugin/components/moment/moment.min.js"></script>
+  <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+  <script src="plugin/whatsapp-chat-support.js"></script>
+
 </head>
 
 <body>
@@ -59,7 +71,7 @@
         <a class="logo-portada">
           <img height="110" width="300" src="img/LOGO2.png" alt="Duma" />
         </a>
-        <h1 class="perfil_title">Servicios de Logística y Transporte</h1>
+        <h1 class="perfil_title">Servicio de Logística y Transporte</h1>
       </div>
     </div>
   </section>
@@ -71,8 +83,8 @@
         <span class="section-subtitle about_initial">Tu carga, nuestra responsabilidad, tu tranquilidad.</span>
         <h2 class="section-title about_initial">Somos Duma,<br> Una empresa de transporte</h2>
         <p class="about_description">¡Confía en nosostros para hacer crecer tu negocio!</p>
-        <section class="boton-modal-G">
-          <a href="javascript:abrir()">Correo</a>
+        <section class="boton-modal-G" id="gmail-openPopup">
+          <a class="gmail-button1" href="#contacto">Correo</a>
         </section>
         <section class="boton-modal-W">
           <a href="https://wa.me/+528713156844?text= Buen dia, quisiera realizar una cotización" target="_blank"
@@ -142,7 +154,22 @@
         </div>
       </div>
     </div>
-    <img src="img/wave.svg" alt="división" class="wave wave_bottom">
+    <div class="header">
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+    </div>
   </section>
 
   <!--------LISTADO DE LOS SITIOS A DONDE VAN-------->
@@ -153,18 +180,64 @@
         <img class="imagenes" src="mapa/destinos-duma.gif">
       </div>
 
-      <div class="container">
+      <div class="container-fluid py-4">
         <div class="row">
+            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-3 pt-2">
+                        <div
+                            class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
+                            <i class="fa fa-truck opacity-10"></i>
+                        </div>
+                        <div class="text-end pt-1">
+                           
+                            <h5 class="mb-0">Cobertura:</h5>
+                        </div>
+                    </div>
+                    <hr class="dark horizontal my-0">
+                    <div class="card-footer p-3">
+                        <p class="mb-0"><span class="text-success text-sm font-weight-bolder">-> </span>Toda la República Mexicana</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="card">
+                    <div class="card-header p-3 pt-2">
+                        <div
+                            class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
+                            <i class="fa fa-truck opacity-10"></i>
+                        </div>
+                        <div class="text-end pt-1">
+                           <h5 class="mb-0">Cobertura:</h5>
+                            
+                        </div>
+                    </div>
+                    <hr class="dark horizontal my-0">
+                    <div class="card-footer p-3">
+                        <p class="mb-0"><span class="text-success text-sm font-weight-bolder">-> </span>Parte de Estados Unidos,
+                          Canadá y Centroamérica</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container">
+        <!---<div class="row">
           <ul class="mapas-list">
             <li>
-              <div class="office-title d-flex flex-column position-relative font-gotham">Cobertura: Estados Unidos,
-                Canadá y Centroamérica </div>
+              <div class="office-title d-flex flex-column position-relative font-gotham">Toda la República Mexicana </div>
             </li>
             <li>
-              <div class="office-title d-flex flex-column position-relative font-gotham">Toda la República Mexicana
+              <div class="office-title d-flex flex-column position-relative font-gotham">Cobertura: Parte de Estados Unidos,
+                Canadá y Centroamérica
               </div>
             </li>
-            <!---<li>
+            <li>
               <div class="office-title d-flex flex-column position-relative font-gotham">Tijuana, Baja California</div>
             </li>
             <li>
@@ -236,9 +309,9 @@
             </li>
             <li>
               <div class="office-title d-flex flex-column position-relative font-gotham">Matamoros, Coahuila</div>
-            </li>----->
+            </li>
           </ul>
-        </div>
+        </div>----->
       </div>
     </section>
   </div>
@@ -283,41 +356,45 @@
                 Ordaz Torreón, Coahuila.</li+>
                 <h1 class="footer_subtitle">Patio</h1>
               <li class="direccion">Periférico Esterito Mieleras, Coah. S/N CP. 27478</li+>
-                <h1 class="footer_subtitle">Plus</h1>
-              <li class="direccion">Patio de apoyo en Nuevo Laredo</li+>
+                <h1 class="footer_subtitle">Patio de apoyo</h1>
+              <li class="direccion">En Nuevo Laredo, Tamps.</li+>
             </ul>
           </div>
         </div>
-        <p class="footer_copy">&#169; Grupo Duma Transportes</p>
-
+        <p class="footer_copy">&#169; Grupo Duma</p>
       </footer>
     </div>
-    <img src="img/wave.svg" alt="división" class="wave wave_bottom">
+    
+    <div class="header">
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+    </div>
   </section>
 
-
-
-  <!------VENTANA EMERGENTE DE CORREO------->
-  <div class="horizontal-padding vertical-padding">
-  
-  
-  
-  
-  
-  
-  
-    <div class="contacto" id="contac">
-    <div class="contact-wrapper animated bounceInUp">
- 
-        <div class="cerrar-modal">
-          <a href="javascript:cerrar()">
-            <img width="20px" height="26px" src="img/cerrar.svg">
-          </a>
+ <!---ICONO FLOTANTE Y VENTANA MODAL DEL CORREO-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <div class="popup-gmail fadeIn" >
+     <div class="contacto" id="contacto">
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="cerrar-modal"><button type="button" class="closePopup">
+          <img width="20px" height="20px" src="img/cerrar.svg">
+          </button>
         </div>
         <div class="contact-form">
           <h1>Contactanos</h1>
-          <form onsubmit="enviarMail(); return false" name="enviar_email" action=""></form>
-          <form method="post" action="correo.php">
+          <form action="enviarcorreo.php" method="post">
             <p>
               <label for="name">Empresa</label>
               <input required type="text" name="name" id="name" />
@@ -327,17 +404,23 @@
               <input required type="email" name="email" id="email" />
             </p>
             <p>
-              <label for="subject">Asunto</label>
-              <input required type="text" name="subject" id="subject" />
+              <label for="name">Contacto</label>
+              <input required type="name" name="interesado" id="interesado" />
             </p>
-  
+            <p>
+              <label for="phone">Telefono</label>
+              <input required type="phone" name="phone" id="phone" />
+            </p>
             <p class="block">
               <label for="message">Mensaje</label>
-              <textarea name="message" rows="3"></textarea>
+              <textarea name="message" id="message" rows="3"></textarea>
             </p>
             <p class="block">
-              <button>
-                Enviar
+              <button onclick="EnviarCorreo()">
+              <span>
+								Enviar 
+								<i  aria-hidden="true"></i>
+							</span>
               </button>
             </p>
           </form>
@@ -352,117 +435,96 @@
           <p>gduma.com</p>
         </div>
       </div>
-  
     </div>
   </div>
-  <form onsubmit="enviar_ajax(); return false" id="form1">
-    <input type="text" name="nombre"><br>
-    <textarea name="mensaje"></textarea><br>
-    <input type="submit" value="Enviar">
-    </form>
-
-
-
-    <!----
-    <div class="contacto" id="contac">
-      <div class="cerrar-modal">
-        <a href="javascript:cerrar()">
-          <img width="30px" height="30px" src="img/cerrar.svg">
-        </a>
-      </div>
-      <h2 class="contacto-title">Contacto</h2>
-      <div class="contacto-details">
-        
-       <div class="contacto-details-group">
-          <p class="contacto-label">Email:</p>
-          <p class="contacto-text">cotizaciones@gduma.com</p>
-        </div>
-        <div class="contacto-details-group">
-          <p class="contacto-text-duma">
-            ¡Deje su mensaje y con gusto le atenderemos!
-          </p>
-        </div>
-      </div>
-      <form method="POST" action="correo.php" class="contacto-form" name="contact" netlify>
-        <div class="contacto-form-group">
-          <label for="name">Nombre de la empresa</label>
-          <input required type="text" name="name" id="name" />
-        </div>
-        <div class="contacto-form-group">
-          <label for="email">Email</label>
-          <input required type="email" name="email" id="email" />
-        </div>
-        <div class="contacto-form-group">
-          <label for="subject">Asunto</label>
-          <input required type="text" name="subject" id="subject" />
-        </div>
-        <div class="contacto-form-group">
-          <label for="message">Mensaje</label>
-          <textarea required name="message" id="message" rows="6"></textarea>
-        </div>
-
-        <button type="submit" class="contacto-form-submit">Enviar</button>
-        <input type="hidden" name="_next" value="http://localhost:5500/">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="email" name="email" placeholder="Email Address">
-      </form>
-
-      
-      <nav class="social"  >
-        <ul class="social-list">
-          <li>
-            <a href="https://www.facebook.com/gpoduma" class="social-link"><img width="30px" height="30px" src="img/social/facebook.svg"
-                alt="facebook profile" /></a>
-          </li>
-          <li>
-            <a href="https://wa.me/+528713156844?text= Buen dia, quisiera realizar una cotización" target="_blank"
-              class="social-link"><img width="30px" height="30px" src="img/social/whatsapp.svg" alt="whatsapp profile" /></a>
-          </li>
-        </ul>
-      </nav>
-    </div>--->
+<section id="gmail-openPopup" class="gmail-button">
+  <div class="float">
+    <i class="fa fa-envelope my-contenedor-gmail" style="color: #ffffff;"></i>
   </div>
+</section>
+
+
+<!---<script src="correo.js"></script>--->
+
+<!------ENVIO DE CORREO------->
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+  function EnviarCorreo(){
+	 var name = $("#name").val();
+	 var email = $("#email").val();
+   var interesado = $("#interesado").val();
+   var phone = $("#phone").val();
+   var message = $("#message").val();
+	 $.ajax(
+		 {
+			 url:'enviarcorreo.php',
+			 type:'POST',
+			 data:{
+				 n:name,
+				 e:email,
+         i:interesado,
+         p:phone,
+         m:message
+
+			 }
+		 }
+	 ).done(function(resp){
+		 if(resp>0){
+			 Swal.fire("Mensaje De Confirmacion","Se envio el mensaje correctamente al correo: "+email+"","success");
+			 $("#name").val("");
+			 $("#email").val("");
+       $("#interesado").val("");
+			 $("#phone").val("");
+			 $("#message").val("");
+       $("#name").focus();
+		 }else{
+			Swal.fire("Mensaje De Error","No se pudo enviar el mensaje ","error");
+		 }
+	 })
+  }
+</script>
 
   <!---ICONO FLOTANTE DE WHATSAPP-->
-  <div class="nav-bottom">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <div class="popup-whatsapp fadeIn">
-      <div class="content-whatsapp -top"><button type="button" class="closePopup">
-          <i class="material-icons icon-font-color">close</i>
-        </button>
-        <p> <img src="img/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
-      </div>
-             <div class="content-whatsapp -bottom">
-        
-        <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
-        <button class="send-msPopup" id="send-btn" type="button">
-          <i class="material-icons icon-font-color--black">send</i>
-        </button>
-      </div>
+  <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+    
+    <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+    </div>  
+ 
+    <div class="wcs_popup">
+        <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+          <span class="img"><img src="img/secretary.png" width="50"></span>
+            <div class="wcs_popup_header_description">Hola, ¿En que podemos ayudarle?</div>
+
+        </div>  
+        <div class="wcs_popup_input" 
+            data-number="+528713156844"
+            data-availability='{ "lunes":"09:00-19:00", "martes":"09:00-19:00", "miercoles":"09:00-19:00", "jueves":"09:00-19:00", "viernes":"09:00-19:00", "sabado":"09:00-14:00", "domingo":"4:00-4:00 " }'>
+            <input type="text" placeholder="Enviar mensaje..." />
+            <i class="fa fa-play"></i>
+        </div>
+       
     </div>
-    <button type="button" id="whats-openPopup" class="whatsapp-button">
-      <div class="float">
-        <i class="fa fa-whatsapp my-float"></i>
-      </div>
-    </button>
-    <div class="circle-anime"></div>
-  </div>
-  <script src="js/whats.js"></script>
-  <!---ICONO FLOTANTE DE GMAIL-->
-  <div class="nav-bottom-G">
-    <section class="contenedor-gmail">
-      <a href="javascript:abrir()"><i class="fa fa-envelope my-contenedor-gmail" style="color: #ffffff;"></i></a>
-    </section>
-    <script>
-      function abrir() {
-        document.getElementById("contac").style.display = "block";
-      }
-      function cerrar() {
-        document.getElementById("contac").style.display = "none";
-      }
-    </script>
-  </div>
+</div>
+<script>
+   $('#button-w').whatsappChatSupport({
+        defaultMsg : '',
+    });
+</script>
 
+ 
 </body>
-
 </html>

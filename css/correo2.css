@@ -1,0 +1,32 @@
+.popup-gmail {
+ 
+    display: none;
+}
+
+.closePopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0px 0px 10px 0px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #f1f1f1;
+ 
+}
+.closePopup:hover {
+  transition: .3s;
+}
+
+.is-active-gmail-popup {
+ 
+  display: flex;
+}
+
+.icon-font-color {
+  color: #000000;
+}
+

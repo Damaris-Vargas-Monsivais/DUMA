@@ -1,3 +1,4 @@
+/*TITULO DE NUESTROS DESTINOS*/
 .mapas {
   max-width: 980px;
   margin: 0 auto;
@@ -103,4 +104,190 @@
   object-position: bottom;
  }
 
+ /*LISTA DE DESTINOS*/
+ hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25; }
+
+hr:not([size]) {
+  height: 1px; }
+
+h5, .h5{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #030f38; }
+
+h5, .h5 {
+  font-size: calc(1.275rem + 0.3vw); }
+  @media (min-width: 1200px) {
+    h5, .h5 {
+      font-size: 1.5rem; } }
+
+.container-fluid{
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 1.5rem);
+  padding-left: var(--bs-gutter-x, 1.5rem);
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x)); }
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y); }
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%; }
+ }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem; }
+
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: #ebebeb;
+  border-bottom: 0 solid rgba(0, 0, 0, 0.125); }
+  .card-header:first-child {
+    border-radius: 0.75rem 0.75rem 0 0; }
+
+.card-footer {
+  padding: 0.5rem 1rem;
+  background-color: #ebebeb;
+  border-top: 0 solid rgba(0, 0, 0, 0.125); }
+  .card-footer:last-child {
+    border-radius: 0 0 0.75rem 0.75rem; }
+
+.position-absolute {
+  position: absolute; }
+
+/*PARA QUE NO SE JUNTE UN CARD CON OTRO*/
+.mb-4 {
+  margin-bottom: 1.5rem; }
+
+/*DIVISION DEL CUADRO DEL CAMION Y LA LINEA GRISESITA*/
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.mt-n4 {
+  margin-top: -1.5rem; }
+.p-3 {
+  padding: 1rem ; }
+
+/*DIVISION DEL MAPA Y EL LISTADO*/
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.pt-3 {
+  padding-top: 1rem; }
+
+.pe-3 {
+  padding-right: 1rem; }
+
+/*CENTRAR LETRA Y CAMION*/
+.text-end {
+  text-align: right; }
+
+.text-center {
+  text-align: center ; }
+
+/*COLOR DE LA FLECHA*/
+.text-success {
+  color: #4CAF50; }
+
+/*SOMBRA DEL CARD*/
+.card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+
+/*CUADRO DE COLOR DEL CAMIONCITO*/
+.bg-gradient-primary {
+  background-image: linear-gradient(195deg, #d30808 0%, #8a0909 100%); }
+
+.bg-gradient-dark {
+  background-image: linear-gradient(195deg, #d30808 0%, #8a0909 100%); }
+
+.icon-shape {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  border-radius: 0.5rem; }
+  .icon-shape i {
+    color: #fff;
+    opacity: 0.8;
+    top: 11px;
+    position: relative; }
+  .icon-shape .ni {
+    top: 14px; }
+
+.icon-lg {
+  width: 64px;
+  height: 64px; }
+  .icon-lg i {
+    top: 31%;
+    font-size: 1.5rem; }
+  .icon-lg.icon-striped {
+    background-position-x: 111px;
+    background-position-y: 111px; }
+    .icon-lg.icon-striped i {
+      top: 21%;
+      margin-left: -15px; }
+
+/*LINEA DIVISORA COLOR GRIS*/
+hr.vertical {
+  position: absolute;
+  background-color: transparent;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 1px; }
+
+hr.horizontal {
+  background-color: transparent; }
  
+h5, .h5, .h5 {
+  font-size: 1.5rem;
+  line-height: 1.375; }
+  @media (max-width: 575.98px) {
+    h5, .h5, .h5 {
+      font-size: calc(1.275rem + 0.3vw); } }
+
+/*LETRAS GORDAS*/
+h5, .h5, .h5{
+  font-weight: 600; }
+
+h5, .h5, .h5 {
+  letter-spacing: -0.05rem; }
+
+/*FLECHA VERDE*/
+.font-weight-bolder {
+  font-weight: 700; }
+
+
+
