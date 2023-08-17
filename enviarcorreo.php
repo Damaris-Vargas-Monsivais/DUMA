@@ -36,12 +36,12 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('dm249833@gmail.com', 'DUMA');
-    $mail->addAddress($email, $name);     // Add a recipient             
+    $mail->addAddress('dm249833@gmail.com', 'DUMA'); 
+    $mail->setFrom($email, $name);    // Add a recipient             
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = ''.$name.', porfavor responda a este correo para poder ayudarle';
+    $mail->Subject = ''.$name.', envio un mensaje desde el sitio web';
     $mail->Body    = '<!DOCTYPE html>
     <html lang="en">
     <head>
