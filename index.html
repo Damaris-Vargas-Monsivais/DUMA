@@ -23,22 +23,15 @@
   <link rel="stylesheet" href="css/animacion.css">
   <link rel="stylesheet" href="css/correo.css">
   <link rel="stylesheet" href="css/correo2.css">
+  <link rel="stylesheet" href="css/nosotros.css">
   <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
   <script defer src="js/app.js"></script>
   <script defer src="js/correo.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- 
-  <!-- jQuery 1.8+ -->
-  <script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
-  <!-- Plugin JS file -->
-  <script src="plugin/components/moment/moment.min.js"></script>
-  <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
-  <script src="plugin/whatsapp-chat-support.js"></script>
-
 </head>
 
 <body>
@@ -55,6 +48,7 @@
           <img src="img/close-icon.svg" alt="cerrar menú" />
         </button>
         <li><a href="#perfil" class="selected">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#unidad">Infraestructura</a></li>
         <li><a href="#mapas">Nuestros Destinos</a></li>
         <li><a href="#informacion">Contacto</a></li>
@@ -76,25 +70,94 @@
   </section>
   
   <!--------INDEX DE DUMA-------->
-  <section class="about section tk-container" id="about">
-    <div class="about_container tk-grid">
-      <div class="about_data">
-        <span class="section-subtitle about_initial">Tu carga, nuestra responsabilidad, tu tranquilidad.</span>
-        <h2 class="section-title about_initial">Somos Duma,<br> Una empresa de transporte</h2>
-        <p class="about_description">¡Confía en nosostros para hacer crecer tu negocio!</p>
-        <section class="boton-modal-G" id="gmail-openPopup">
-          <a class="gmail-button1" href="#contacto">Correo</a>
-        </section>
-        <section class="boton-modal-W">
-          <a href="https://wa.me/+528712132466?text= Buen dia, quisiera realizar una cotización" target="_blank"
-            class="social-link">Whatsapp</a>
-        </section>
+  
+    <section class="nosotros" id="nosotros">
+      <h2 class="duma-title">Nosotros</h2>
+  
+      <section class="about section-n tk-container" id="about">
+        <div class="about_container tk-grid">
+          <div class="about_data">
+            <span class="section-subtitle about_initial">Tu carga, nuestra responsabilidad, tu tranquilidad.</span>
+            <h2 class="section-title about_initial">Somos Duma,<br> Una empresa de transporte</h2>
+            <p class="about_description">¡Confía en nosostros para hacer crecer tu negocio!</p>
+            <section class="boton-modal-G" id="gmail-openPopup">
+              <a class="gmail-button1" href="#contacto">Correo</a>
+            </section>
+            <section class="boton-modal-W">
+              <a href="https://wa.me/+528712132466?text= Buen dia, quisiera realizar una cotización" target="_blank"
+                class="social-link">Whatsapp</a>
+            </section>
+          </div>
+          <div class="about_data">
+            <img src="img/full-plataforma3.jpeg" alt="" class="about_img">
+          </div>
+        </div>
+      </section>
+  
+      <!--------NOSOTROS DUMA-------->
+  
+  
+      <div class="cards-container">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="img/numero/num1.png" alt="">
+              <div class="card-body">
+                <h5>¿Quiénes somos?<br />
+                </h5>
+                <p class="card-text">Duma transportes S.A. de C.V. es un corporativo de Empresas creado a partir de las
+                  necesidades específicas de la industria actual,
+                  con el fin de cubrir los requerimientos de Logística y Transporte Nacional e Internacional,
+                  apoyando a nuestros clientes con la distribución de sus mercancías.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="img/numero/num2.png" alt="">
+              <div class="card-body">
+                <h5>Misión<br />
+                </h5>
+                <p class="card-text">Colaborar estrechamente al éxito comercial de nuestros clientes,
+                  buscando constantemente las opciones más innovadoras en materia de logística y transporte,
+                  garantizando entregas oportunas al mejor costo y con la mejor calidad en el servicio. </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="img/numero/num3.png" alt="">
+              <div class="card-body">
+                <h5>Visión<br />
+                </h5>
+                <p class="card-text">Ser una empresa líder en el Servicio de Logística y Transporte cuyo reconocimiento de
+                  calidad, confiabilidad,
+                  innovación y servicios de importación y exportación es logrado por un equipo de personas motivado,
+                  competente y preocupado constantemente por la mejora continua en beneficio del cliente y la sociedad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="img/numero/num4.png" alt="">
+              <div class="card-body">
+                <h5>Política de calidad<br />
+                </h5>
+                <p class="card-text">En Grupo Duma estamos comprometidos con la mejora continua y la satisfacción del
+                  cliente; distinguiéndonos de la competencia por mantenernos en la observancia, actualización y
+                  cumplimiento de todas y cada una de las leyes y normas que regulan al ramo del transporte.
+                  Nuestros servicios de logística y transporte están creados a partir de las necesidades y requisitos de
+                  la industria actual, con el fin de cubrir y apoyar al cliente con la movilidad de sus mercancías en
+                  tiempo y forma apegados al marco legal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about_data">
-        <img src="img/full-plataforma3.jpeg" alt="" class="about_img">
-      </div>
-    </div>
-  </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+  
+    </section>
+ 
 
   <!--------DESTINOS DE DUMA-------->
   <section class="unidades" id="unidad">
@@ -245,7 +308,7 @@
             <h3 class="footer_title">Direcciones</h3>
             <ul>
               <h1 class="footer_subtitle">Oficinas</h1>
-              <li class="direccion">Carr. Tórreon-Matamoros #5750 Ote. Local 7 y 8, Col. Gustavo Díaz
+              <li class="direccion">Carr. Torreón-Matamoros #5750 Ote. Local 7 y 8, Col. Gustavo Díaz
                 Ordaz Torreón, Coahuila.</li>
               <h1 class="footer_subtitle">Patio</h1>
               <li class="direccion">Periférico Esterito Mieleras, Coah. S/N CP. 27478</li>
@@ -254,7 +317,8 @@
             </ul>
           </div>
         </div>
-        <p class="footer_copy">&#169; Grupo Duma</p>
+        <p class="footer_copy">Todos los derechos reservados &#169; 2023 Duma Transportes S.A. de C.V.</p>
+        <p class="footer_copy"><a class="aviso" href="aviso.html">Aviso de Privacidad </a></p>
       </footer>
     </div>
     
@@ -412,10 +476,16 @@
        
     </div>
 </div>
+<!-- jQuery 1.8+ -->
+<script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+<!-- Plugin JS file -->
+<script src="plugin/components/moment/moment.min.js"></script>
+<script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+<script src="plugin/whatsapp-chat-support.js"></script>
 <script>
-   $('#button-w').whatsappChatSupport({
-        defaultMsg : '',
-    });
+  $('#button-w').whatsappChatSupport({
+    defaultMsg: '',
+  });
 </script>
 
  

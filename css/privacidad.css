@@ -1,0 +1,96 @@
+body {
+    margin: 1rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .938rem;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+/*SUBTITULO AMARILLO*/
+.title-aviso{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 0px;
+	margin-top: 10px;
+	text-align: center;
+	color:#FFA500;
+}
+/*CONTENIDO DE LAS POLITICAS*/
+.privacidad {
+    display: flex;
+    flex-direction: column;
+    
+  }
+ 
+  .generalContent {
+    padding: 3.125rem 1.5625rem;
+}
+
+  .privacidad-body {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+  }
+  
+  .wave {
+    width: 100%;
+    position: relative;
+    top: 2px;
+  }
+  
+  .wave_bottom {
+    transform: scaleY(-1);
+    top: -2px;
+  }
+  
+  .privacidad-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+  }
+  
+  
+  
+  @media (min-width: 950px) {
+    .privacidad-title{
+      font-size: 50px;
+      margin: 35px 0;
+    }
+      
+    .privacidad-grid {
+      display: grid;
+      grid-template-columns: auto 2px auto;
+      gap: 20px 70px;
+      padding: 70px;
+      justify-content: center;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+  
+    .line {
+      background-color: var(--text-color-inverse);
+      position: relative;
+    }
+  
+    .line::before,
+    .line::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: var(--text-color-inverse);
+      border-radius: 50%;
+  
+      position: absolute;
+      top: -20px;
+      left: -9px;
+    }
+  
+    .line::after {
+      top: 100%;
+      z-index: 1;
+    }
+  }
