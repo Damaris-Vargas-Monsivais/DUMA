@@ -90,14 +90,14 @@
     }
 
     .wcs_fixed_right{
-        z-index: 999;
+        z-index: 1;
         position: fixed;
         bottom: 20px;
         right: 20px;
     }
 
     .wcs_fixed_left{
-        z-index: 999;
+        z-index: 1;
         position: fixed;
         bottom: 20px;
         left: 20px;

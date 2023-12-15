@@ -25,7 +25,6 @@
     display: none;
 }
 .cerrar-modal{
-
     position: absolute;
     right: 6px;
     top: 6px;
@@ -35,7 +34,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 
   minmax(150px, 1fr));
-  gap:32px
+  gap:32px;
 }
 /*BOTON FLOTANTE DE GMAIL*/
 .contenedor-gmail{
@@ -54,7 +53,7 @@
 }
 .contenedor-gmail:hover {
 	/*text-decoration: none;*/
-	color: #fff;
+	  color: #fff;
     background-color:#b61414;
 }
 

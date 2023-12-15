@@ -1,6 +1,5 @@
 .popup-gmail {
- 
-    display: none;
+  display: none;
 }
 
 .closePopup {
@@ -21,8 +20,7 @@
   transition: .3s;
 }
 
-.is-active-gmail-popup {
- 
+.is-active-gmail-popup { 
   display: flex;
 }
 
